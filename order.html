@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script src="scripts/main.js"></script>
+    
+    <title>Order</title>
+</head>
+<body onLoad="main()">
+    <div id="wrapper">
+        <div id="header">
+            <h1>Solent Pizzas</h1>
+            <p id="time"></p>
+            <p id="date"></p>
+            
+        </div> <!-- /header -->
+        <div id="content">
+            <div id="left_nav">
+                <!-- create list for nav bar -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                
+            </div> <!-- /left_nav -->
+            
+            <div id="section">
+                <form id="order_form">
+                    <fieldset id="base">
+                        <legend>Please select a pizza base*</legend>
+                        
+                        <p><input type="radio" name="base" value="5"  id="small" onChange="baseTotal(this)"><label for=small>Small:</label>  <span class="price">£5.00</span>
+                        <p><input type="radio" name="base" value="10" id="medium" onChange="baseTotal(this)"><label for="medium">Medium:</label>   <span class="price">£10.00</span>
+                        <p><input type="radio" name="base" value="15" id="large" onChange="baseTotal(this)"><label for="large">Large:</label> <span class="price">£15.00</span>
+                        <p><input type="radio" name="base" value="20" id="xlarge" onChange="baseTotal(this)"> <label for="xlarge">X Large:</label> <span class="price">£20.00</span>
+                    </fieldset>
+                    
+                    <p></p>
+                    <fieldset id="topping">
+                        <legend>Please select one or more topping*</legend>
+                        
+                        <p><input type="checkbox" name="topping" value="0.5" id="cheese" onChange="checkboxSum(this)"> <label for="cheese">Cheese:</label> <span class="price">£0.50</span>
+                        <p><input type="checkbox" name="topping" value="0.7" id="pepperoni" onChange="checkboxSum(this)"> <label for="pepperoni">Pepperoni:</label> <span class="price">£0.70</span>
+                        <p><input type="checkbox" name="topping" value="1" id="meat" onChange="checkboxSum(this)"> <label for="meat">Meat:</label> <span class="price">£1.00</span>
+                        <p><input type="checkbox" name="topping" value="0.4" id="mushroom" onChange="checkboxSum(this)"> <label for="mushroom">Mushroom:</label> <span class="price">£0.40</span>
+                        <p><input type="checkbox" name="topping" value="0.5" id="ham" onChange="checkboxSum(this)"> <label for="ham">Ham:</label> <span class="price">£0.50</span>
+                        <p><input type="checkbox" name="topping" value="0.6" id="anchovies" onChange="checkboxSum(this)"> <label for="anchovies">Anchovies:</label> <span class="price">£0.60</span>
+                    </fieldset>
+                    
+                    <p></p>
+                    <fieldset id="extras">
+                        <legend>Extras</legend>
+                        
+                        <p><input type="checkbox" name="extras" value="1.5" id="chips" onChange="checkboxSum(this)"> <label for="chips">Chips:</label> <span class="price">£1.50</span>
+                        <p><input type="checkbox" name="extras" value="2" id="garlic_bread" onChange="checkboxSum(this)"> <label for="garlic_bread">Garlic Bread:</label> <span class="price">£2.00</span>
+                    </fieldset>
+                    
+                    <p></p>
+                    <fieldset id="delivery">
+                        <legend>Delivery information</legend>
+                        
+                        <p>Address*: <input type="text" id="deliv_addr" name="address"></p>
+                        <p>Post Code*: <input type="text" id="post_code" name="post_code"></p>
+                    </fieldset>
+                    <p id="checkboxError" style="display:none">Please select both a topping and a pizza base</p>
+                    <p id="deliveryError" style="display:none">Please enter delivery details</p>
+                    
+                    <p id="total">Total: £0.00</p>
+                    
+                    
+                    
+                    
+                    <p id="order_button"><button type="submit" id="button_ord" name="order" >Order</button></p>
+                    
+                    <p id="reset_button"><button type="reset" id="button_reset" name="reset" >Reset</button></p>
+                </form>
+                
+            </div> <!-- /section -->        
+        </div>
+        
+        <div id="footer">
+        
+            Kevin Blandford
+            
+        </div> <!-- /footer -->
+        
+        
+    </div> <!-- /wrapper -->
+    
+</body>
+</html>

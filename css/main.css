@@ -1,0 +1,118 @@
+body {
+    font-family: arial;
+    font-size: 20px;
+}
+
+h1 {
+    color: #ef0b0b;
+}
+
+h2{
+    text-align: center;
+}
+
+#wrapper {
+    margin: 0 auto;
+}
+
+#header, #footer {
+    margin: 0 auto;
+    background-color: lightgrey;
+    width: 90%;
+    text-align: center;
+    border: 3px solid black;
+}
+
+
+#left_nav {
+    background-color: lightgrey;
+    width: 20%;
+    display: table-cell;
+    padding: 5px;
+}
+
+#left_nav ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-size: 25px;
+    color: red;
+}
+
+a:visited, a:link {
+    color: black;
+    
+}
+
+a:active {
+    background-color: yellow;
+    color: red
+    
+}
+
+#content {
+    display: table;
+    width:90%;
+    border: 3px solid black;
+    margin: 0 auto;
+}
+
+#section {
+    background-color: grey;
+    width: 70%;
+    display: table-cell;
+    height: 100%;
+    padding: 1%;
+}
+
+#contact {
+    background-color: grey;
+    display: table-cell;
+    width: 100%;
+    margin: 0 auto;
+    height: 100%;
+    text-align: center;
+    padding-right: 25%;
+}
+
+#formError, #emailConfirmError, #checkboxError, #deliveryError {
+    color: aqua;
+    font-weight: bold;
+    text-align: center;
+}
+
+#base, #topping, #extras, #delivery, #summary {
+    border: 5px solid black;
+    width: 30%;
+    margin: 0 auto;
+}
+
+legend {
+    text-align: center;
+}
+
+#order_button, #reset_button {
+    text-align: center;
+}
+
+#button_ord, #button_reset, #contact_button {
+    border: 2px solid black;
+    font-size: 20px;
+}
+
+#total {
+    text-align: center;
+    font-size: 25px;
+}
+
+iframe {
+    width: 600px;
+    height: 450px;
+    border: 0;
+}

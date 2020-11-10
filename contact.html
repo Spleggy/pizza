@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <link rel="stylesheet" href="css/main.css" type="text/css" />
+    <script src="scripts/main.js"></script>
+    
+    <title>Contact</title>
+</head>
+<body onLoad="main()">
+    <div id="wrapper">
+        <div id="header">
+            <h1>Solent Pizzas</h1>
+            <p id="time"></p>
+            <p id="date"></p>
+            
+        </div> <!-- /header -->
+        <div id="content">
+            <div id="left_nav">
+                <!-- create list for nav bar -->
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="order.html">Order</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+                
+            </div> <!-- /left_nav -->
+            
+            <div id="section">
+                <address>
+                    <p>Address:</p>
+                    <p>Southampton Solent University</p>
+                    <p>E Park Terrace</p>
+                    <p>Southampton</p>
+                    <p>SO14 0YN</p>
+                </address>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2515.8502479814892!2d-1.4023835840732422!3d50.90798696217177!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487476b1943c33e9%3A0x7b3d2a7c433db059!2sSouthampton+Solent+University!5e0!3m2!1sen!2suk!4v1524936231052" style="border:0" allowfullscreen></iframe>
+                
+                
+            </div> <!-- /section -->
+            
+            <div id="contact">
+                <form id="contact_form">
+                    
+                    <h2>Contact form</h2>   
+                    
+                    <p id="formError" style="display:none">All fields marked with an asterisk are required!</p>
+                    
+                    <p>First name*:
+                    <input type="text" id="first_name" name="first_name" onBlur="validateColour()" placeholder="Enter your first name">
+                    
+                    <p>Last name*:
+                    <input type="text" id="last_name" name="last_name" onBlur="validateColour()" placeholder="Enter your last name">
+                    
+                    <p>Email address*:
+                    <input type="email" id="email" name="email" onBlur="validateColour()" placeholder="Enter your email">
+                
+                    <p>Confirm your email address*:
+                    <input type="email" id="email_confirmation" name="email_confirmation" onBlur="validateColour()" placeholder="Confirm your email">
+                    
+                    <p id="emailConfirmError" style="display:none">Email addresses must match!</p>
+                    
+                    <p>Phone number:
+                    <input type="tel" name="phone_number" placeholder="Enter your phone number">
+                    
+                    <p>Message*:
+                    <input type="text" id="message" name="message" onBlur="validateColour()" placeholder="Enter your message">
+                    
+                    <p></p>
+                    <input id="contact_button" type="submit" name="submit">
+                    
+                </form>
+                
+            </div> <!-- /contact -->
+            
+            
+        </div> <!-- /content -->
+        
+        <div id="footer">
+        
+            Kevin Blandford
+            
+        </div> <!-- /footer -->
+        
+        
+    </div> <!-- /wrapper -->
+</body>
+</html>
